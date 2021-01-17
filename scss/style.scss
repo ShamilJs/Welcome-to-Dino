@@ -10,9 +10,9 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 html {
-	scroll-behavior: smooth;
-	position: relative;
 	
+	position: relative;
+	scroll-behavior: smooth;
 }
 .container{
 	margin: 0 auto;
@@ -29,12 +29,22 @@ html {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.12px;
+	border-radius: 3px;
 }
 .btn:hover{
 	box-shadow: 0 0 5px rgba(255, 255, 255, .5);
 }
 
 @import '_header';
+@import '_whoWeAre';
+@import '_ourHistory';
+@import '_ourServices';
+@import '_mainTitle';
+@import '_portfolioNav';
+@import '_portfolio';
+@import '_caseStudy';
+@import '_statistic';
+@import '_pricing';
 // @import '_features';
 // @import '_about';
 // @import '_how';
