@@ -55,3 +55,34 @@ html {
 // @import '_trial';
 // @import '_appson';
 // @import '_footer';
+
+@media only screen and (max-width: 1024px) {
+	.btn {
+		width: 200px;
+		height: 46px;
+		font-size: 12px;
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 425px) {
+	.btn {
+		width: 130px;
+		height: 30px;
+		font-size: 10px;
+		border-radius: 2px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.btn{
+		width: 100px;
+		height: 25px;
+		font-size: 10px;
+		font-weight: 400;
+		border-radius: 2px;
+	}
+}

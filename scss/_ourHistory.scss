@@ -47,20 +47,119 @@
 
 
 
-@media only screen and (min-width: 1950px) and (max-width: 2560px){
-}
 
-@media only screen and (max-width: 1440px) {
-}
 
 @media only screen and (max-width: 1024px) {
+	.our-history {
+		padding: 80px 5px 0 5px;
+		min-height: 300px;
+	}
+	.our-history__block {
+		padding: 0 40px;
+	}
+	.our-history__left img {
+		width: 100%;
+	}
+
+	.our-right__title {
+		margin: 0 0 20px 40px;
+		padding-left: 20px;
+		font-size: 32px;
+		letter-spacing: 3.2px;
+		border-left: 5px solid #e74c3c;
+	}
+	.our-right__text {
+		padding-left: 40px;
+		width: 585px;
+		min-height: 198px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+	.our-right__btn{
+		margin-left: 40px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.our-history {
+		padding: 60px 5px 0 5px;
+		min-height: 300px;
+	}
+	.our-history__block {
+		padding: 0 30px;
+	}
+	.our-right__title {
+		margin: 0 0 10px 20px;
+		padding-left: 20px;
+		font-size: 28px;
+		letter-spacing: 3px;
+		border-left: 4px solid #e74c3c;
+	}
+	.our-history__left{
+		flex: 1 0 50%;
+	}
+	.our-right__text {
+		padding-left: 20px;
+		width: 320px;
+		min-height: 198px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 22px;
+		margin: 0 0 20px 0;
+	}
+	.our-right__btn{
+		margin-left: 20px;
+	}
 }
+	
 
 @media only screen and (max-width: 425px) {
+	.our-history {
+		padding: 40px 5px 0 5px;
+		min-height: 300px;
+	}
+	.our-history__block {
+		padding: 0 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.our-history__left{
+		display: none;
+	}
+	.our-right__title {
+		margin: 0 0 20px 0;
+		padding-left: 0px;
+		font-size: 20px;
+		letter-spacing: 2px;
+		border-left: 0px solid #e74c3c;
+		text-align: center;
+	}
+	.our-right__text {
+		text-align: center;
+		padding-left: 0px;
+		width: 400px;
+		min-height: 198px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+	.our-history__right {
+		align-items: center;
+	}
+	.our-right__btn{
+		margin-left: 0px;
+	}
 }
-
+@media only screen and (max-width: 375px) {
+	.our-right__text {
+		width: 350px;
+	}
+}
 @media only screen and (max-width: 320px) {
+	.our-right__text {
+		width: 290px;
+	}
 }

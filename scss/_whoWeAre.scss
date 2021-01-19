@@ -36,7 +36,7 @@
         font-family: "Open Sans - Semibold", sans-serif;
         font-size: 18px;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         text-transform: uppercase;
 		letter-spacing: 1.35px;
 	}
@@ -71,19 +71,50 @@
 	
 }
 
-@media only screen and (min-width: 1950px) and (max-width: 2560px){
-}
 
-@media only screen and (max-width: 1440px) {
-}
+
 
 @media only screen and (max-width: 1024px) {
+	.who-we-are {
+		padding: 100px 5px 0 5px;
+	}
+	.who-we-are__item {
+		width: 220px;
+		height: 300px;
+	}
+	.who-we-are__block {
+		padding: 0 40px 50px 40px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.who-we-are {
+		padding: 80px 5px 0 5px;
+	}
+	.who-we-are__block {
+		padding: 0 20px 50px 20px;
+	}
+	.who-we-are__item {
+		width: 160px;
+		height: 300px;
+	}
 }
 
 @media only screen and (max-width: 425px) {
+	.who-we-are {
+		padding: 40px 5px 0 5px;
+	}
+	.who-we-are__block {
+		flex-direction: column;
+	}
+	.who-we-are__item {
+		width: 220px;
+		height: 200px;
+		margin-top: 30px;
+	}
+	.who-item__title {
+		font-size: 14px;
+	}
 }
 
 @media only screen and (max-width: 320px) {

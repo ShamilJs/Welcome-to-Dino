@@ -1,5 +1,6 @@
 .main-title {
-	padding-top: 150px;
+	padding: 150px 15px 0 15px;
+
     &__block {
 		display: flex;
 		flex-direction: column;
@@ -12,7 +13,7 @@
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 36px;
         font-weight: 700;
-        text-align: left;
+        text-align: center;
         text-transform: uppercase;
 		letter-spacing: 3.6px;
 		margin-bottom: 25px;
@@ -33,20 +34,59 @@
 }
 
 
-@media only screen and (min-width: 1950px) and (max-width: 2560px){
-}
-
 @media only screen and (max-width: 1440px) {
+	.main-title {
+		padding-top: 120px;
+	}
+	
 }
 
 @media only screen and (max-width: 1024px) {
+	.main-title {
+		padding-top: 80px;
+	}
+	.main-title__title {
+		font-size: 32px;
+		font-weight: 700;
+		letter-spacing: 3.2px;
+		margin-bottom: 15px;
+	}
+	.main-title__text {
+		font-size: 12px;
+		line-height: 25px;
+		margin-bottom: 15px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.main-title {
+		padding-top: 50px;
+	}
+	.main-title__title {
+		font-size: 28px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		margin-bottom: 12px;
+	}
+	.main-title__text {
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 12px;
+	}
 }
 
 @media only screen and (max-width: 425px) {
-}
-
-@media only screen and (max-width: 320px) {
+	.main-title {
+		padding: 30px 30px 0 30px;
+	}
+	.main-title__title {
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		margin-bottom: 10px;
+	}
+	.main-title__text {
+		font-size: 10px;
+		margin-bottom: 10px;
+	}
 }

@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // const slider = () => {
 //     const widthWindow = document.documentElement.clientWidth;
@@ -63,16 +63,30 @@
 // paintTheDot();
 
 
-// const openPopup = () => {
-//     const navBurger = document.querySelector('.nav__burger');
-//     const popup = document.querySelector('.popup');
-//     const close = document.querySelector('.popup__item > button');
+const openPopup = () => {
+    const navBurger = document.querySelector('.nav_nav__burger');
+    const popup = document.querySelector('.nav_nav');
+    const close = document.querySelector('.nav-nav__close');
 
-//     navBurger.addEventListener('click', () => {
-//         popup.style.display = 'block';
-//     });
-//     close.addEventListener('click', () => {
-//         popup.style.display = 'none';
-//     });
-// };
-// openPopup();
+    navBurger.addEventListener('click', () => {
+        navBurger.classList.toggle('close-act');
+        popup.classList.toggle('open_popup');
+	});
+	
+    close.addEventListener('click', () => {
+        popup.classList.remove('open_popup');
+        navBurger.classList.remove('close-act');
+    });
+};
+openPopup();
+
+const addActiveNav = () => {
+    const popup = document.querySelectorAll('.nav_nav > li');
+    popup.forEach(item => {
+		item.addEventListener('click', () => {
+			popup.forEach(item => item.classList.remove('active-nav'));
+			item.classList.add('active-nav');
+		})
+    })
+}
+addActiveNav();
