@@ -1,0 +1,193 @@
+.our-team {
+	margin-top: 143px;
+    min-height: 744px;
+    background: url('../img/ourTeam/1.png') 0 0/100% 100% no-repeat;
+    padding: 150px 0 0 0;
+    &__ {
+        &_container {
+			position: relative;
+			min-height: 345px;
+        }
+    }
+
+    &__title {
+        color: #ffffff;
+    }
+
+    &__text {
+        color: #ffffff;
+    }
+    &__image {
+        width: 51px;
+        height: 51px;
+		position: absolute;
+		&:hover{
+			width: 86px;
+			height: 86px;
+			.team__hover{
+				display: flex;
+			}
+		}
+	}
+}
+.our-team {
+	&__image-image {
+		width: 51px;
+        height: 51px;
+        border-radius: 50px;
+		border: 3px solid #e74c3c;
+		&:hover{
+			width: 86px;
+			height: 86px;
+			border: 5px solid #e74c3c;
+		}
+	}
+	&__image-image img{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.our-team__image-image:hover{
+	position: relative;
+	z-index: 1;
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		border-radius: 50px;
+		background-color: rgba(231,76,60, 0.5);
+		z-index: 200;
+	}
+}
+.team1{
+	bottom: 0;
+	left: 0;
+}
+.team2{
+	bottom: 50px;
+	left: 295px;
+}
+.team3{
+	bottom: 53px;
+	left: 48%;
+}
+.team4{
+	bottom: 15px;
+	right: 295px;
+}
+.team5{
+	bottom: 65px;
+	right: 0;
+}
+
+.team1:hover{
+	bottom: -10px;
+}
+.team2:hover{
+	bottom: 35px;
+}
+.team3:hover{
+	bottom: 35px;
+}
+.team4:hover{
+	bottom: 0px;
+	right: 280px;
+}
+.team5:hover{
+	bottom: 45px;
+	right: 0;
+}
+
+.team {
+	&__hover {
+		width: 140px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 0 0 -27px;
+		position: relative;
+		pointer-events: none;
+		display: none;
+		&::before{
+			content: '';
+			width: 1px;
+			height: 53px;
+			background-color:#ffffff;
+			opacity: 0.75;
+		}
+	}
+	&__title {
+		margin: 30px 0 0 0;
+		color: #e74c3c;
+		font-family: "Open Sans - Semibold", sans-serif;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 1.8px;
+		letter-spacing: 1.8px;
+	}
+	&__text {
+		margin: 15px 0 0 0;
+		color: #ffffff;
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 23.99px;
+		text-align: center;
+		letter-spacing: 1.4px;
+	}
+}
+
+
+
+
+
+@media only screen and (min-width: 1950px) and (max-width: 2560px){
+}
+
+@media only screen and (max-width: 1440px) {
+	.team1{
+		bottom: -55px;
+		left: 0;
+	}
+	.team2{
+		bottom: 40px;
+		left: 295px;
+	}
+
+	.team4{
+		bottom: 20px;
+	}
+	.team5{
+		bottom: 150px;
+		right: 20px;
+	}
+	
+	.team1:hover{
+		bottom: -60px;
+	}
+
+	.team3:hover{
+		bottom: 35px;
+	}
+	.team5:hover{
+		bottom: 120px;
+		right: 20px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 425px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
