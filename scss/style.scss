@@ -35,26 +35,27 @@ html {
 	box-shadow: 0 0 5px rgba(255, 255, 255, .5);
 }
 
-@import '_header';
-@import '_whoWeAre';
-@import '_ourHistory';
-@import '_ourServices';
-@import '_mainTitle';
-@import '_portfolioNav';
-@import '_portfolio';
-@import '_caseStudy';
-@import '_statistic';
-@import '_pricing';
-@import '_ourTeam';
-// @import '_features';
-// @import '_about';
-// @import '_how';
-// @import '_pricing';
-// @import '_testimonials';
-// @import '_news';
-// @import '_trial';
-// @import '_appson';
-// @import '_footer';
+.dn {
+	display: none;
+}
+
+@import '_header'; //готов
+@import '_whoWeAre'; //готов
+@import '_ourHistory';  //готов
+@import '_ourServices';  //нет адаптива
+@import '_mainTitle';  //готов
+@import '_portfolioNav';  //нет адаптива
+@import '_portfolio';  //нет адаптива
+@import '_caseStudy';  //нет адаптива
+@import '_statistic';  //нет адаптива
+@import '_pricing';  //нет адаптива
+@import '_ourTeam';  //нет адаптива
+@import '_great';  //готов
+// нет одного блока
+@import '_keepInTouch';  //готов
+@import '_pre-footer';  //готов
+@import '_footer';  //готов
+
 
 @media only screen and (max-width: 1024px) {
 	.btn {

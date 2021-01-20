@@ -1,0 +1,140 @@
+.great-btn-left, .great-btn-right {
+	display: none;
+}
+.great {
+	background-color: #f4f5f9;
+	padding-top: 65px;
+	padding-bottom: 140px;
+	border-bottom: 1px solid #e6e7eb;
+    &__block {
+		width: 100%;
+		min-height: 230px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+    }
+    &__item {
+        width: 210px;
+        height: 100px;
+        box-shadow: 0 1px 3px rgba(31, 31, 31, 0.09);
+		background-color: #ffffff;
+		margin-right: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			position: relative;
+			z-index: 2;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				box-shadow: 0 3px 9px 1px rgba(31, 31, 31, 0.3);
+				background-color: #e74c3c;
+				z-index: -1;
+			}
+		}
+	}
+	&__block :nth-child(5), &__block :nth-child(10){
+		margin-right: 0;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	.great {
+		padding-bottom: 80px;
+		&__block {
+			padding: 0 40px;
+		}
+		&__item {
+			width: 180px;
+			height: 90px;
+			margin-right: 10px;
+		}
+		&__item img {
+			width: 60%;
+		}
+	}
+	
+
+}
+
+@media only screen and (max-width: 768px) {
+	.great {
+		padding-top: 40px;
+		padding-bottom: 0px;
+		border-bottom: 1px solid #e6e7eb;
+		position: relative;
+	}
+	.great__block {
+		flex-wrap: nowrap;
+		width: 730px;
+		min-height: 200px;
+	}
+	.great__item {
+		margin-right: 20px;
+		width: 210px !important;
+		height: 100px !important;
+		flex: 0 0 33.333%;
+	}
+	.great__block :nth-child(5), &__block :nth-child(10){
+		margin-right: 20px;
+    }
+	.great__item img {
+		width: 70%;
+		height: 70%;
+	}
+	.great-btn-left, .great-btn-right {
+		top: 170px;
+		display: flex;
+	}
+	.great-btn-left {
+		left: 250px;
+	}
+	.great-btn-right{
+		right: 250px;
+	}
+	
+        
+}
+
+@media only screen and (max-width: 425px) {
+	.great-btn-left {
+		left: 150px;
+	}
+	.great-btn-right{
+		right: 150px;
+	}
+	.great__item img {
+		width: 60%;
+		height: 60%;
+	}
+	.great__block {
+		padding: 0 30px;
+		min-height: 200px;
+	}
+	.great__item {
+		margin-right: 20px;
+		max-width: 180px !important;
+		height: 90px !important;
+		flex: 0 0 33.333%;
+	}
+	.great__block :nth-child(5), &__block :nth-child(10){
+		margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+	.great-btn-left {
+		left: 100px;
+	}
+	.great-btn-right{
+		right: 100px;
+	}
+}

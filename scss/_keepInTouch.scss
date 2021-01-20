@@ -1,0 +1,222 @@
+.keep-btn-left, .keep-btn-right {
+	display: none;
+}
+.keep-in-touch {
+	background-color: #f4f5f9;
+	padding: 69px 0 150px 0;
+    &__block {
+		padding: 0 2px;
+		height: 566px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    }
+}
+
+.keep-left {
+	width: 478px;
+	height: 100%;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	padding: 95px 0 100px 91px;
+    &__title {
+		color: #e74e3e;
+		font-family: "Source Sans Pro - Semibold", sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: left;
+		text-transform: uppercase;
+		padding: 0 0 20px 0;
+    }
+    &__text {
+		color: #999999;
+		font-family: "Open Sans", sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: left;
+		padding: 0 0 65px 0;
+    }
+}
+.keep-right {
+	width: 665px;
+	height: 100% !important;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 99px 0 85px 91px;
+    & input  {
+        width: 464px;
+        height: 31px;
+        color: #999999;
+        font-family: "Open Sans - Semibold", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+		text-align: left;
+		border-bottom: 1px solid rgba(153, 153, 153, 0.25);
+		padding-bottom: 20px;
+	}
+	& textarea {
+        width: 464px;
+        height: 111px;
+        color: #999999;
+        font-family: "Open Sans - Semibold", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+		text-align: left;
+		border-bottom: 1px solid rgba(153, 153, 153, 0.25);
+		resize: none;
+    }
+    &__btn {
+        width: 157px;
+        height: 44px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	.keep-left__title {
+		font-size: 18px;
+		line-height: 20px;
+		padding: 0 0 10px 0;
+	}
+	.keep-left__text {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0 0 50px 0;
+	}
+	.keep-right input {
+		width: 350px;
+		height: 25px;
+		font-size: 12px;
+		line-height: 20px;
+		padding-bottom: 10px;
+	}
+	.keep-right textarea {
+		width: 350px;
+		height: 100px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.keep-in-touch {
+		background-color: #f4f5f9;
+		padding: 40px 100px 100px 100px;
+	}
+	.keep-in-touch__block {
+		height: 450px;
+	}
+	.keep-right {
+		width: 450px;
+		height: 100% !important;
+		padding: 70px 0 45px 50px;
+	}
+	.keep-left {
+		width: 350px;
+		height: 100%;
+		padding: 70px 0 50px 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.keep-left__title {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 0 0 10px 0;
+	}
+	.keep-left__text {
+		font-size: 12px;
+		line-height: 20px;
+		padding: 0 0 50px 0;
+	}
+	.keep-right input {
+		width: 200px;
+		height: 25px;
+		font-size: 10px;
+		line-height: 20px;
+		padding-bottom: 10px;
+	}
+	.keep-right textarea {
+		width: 200px;
+		height: 60px;
+		font-size: 10px;
+		line-height: 20px;
+	}
+	.keep-in-touch {
+		background-color: #f4f5f9;
+		padding: 40px 60px 100px 60px;
+		position: relative;
+	}
+	.keep-in-touch__block {
+		height: 370px;
+	}
+	.keep-right {
+		width: 300px;
+		height: 100% !important;
+		padding: 30px 0 40px 30px;
+	}
+	.keep-left {
+		width: 300px;
+		height: 100%;
+		padding: 30px 0 30px 30px;
+	}
+	
+
+}
+
+@media only screen and (max-width: 425px) {
+	.keep-btn-left, .keep-btn-right {
+		top: 200px;
+	}
+	.keep-btn-left {
+		left: 45px;
+		
+	}
+	.keep-btn-right {
+		right: 45px;
+		display: flex;
+	}
+	.keep-right {
+		display: none;
+	}
+	.keep-in-touch {
+		background-color: #f4f5f9;
+		padding: 40px 60px 60px 60px;
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.keep-right input {
+		width: 200px;
+		height: 25px;
+		font-size: 10px;
+		line-height: 20px;
+		padding-bottom: 10px;
+	}
+	.keep-right textarea {
+		width: 200px;
+		height: 60px;
+		font-size: 10px;
+		line-height: 20px;
+	}
+	.keep-in-touch {
+		background-color: #f4f5f9;
+		padding: 40px 30px 40px 30px;
+		position: relative;
+	}
+	.keep-btn-left {
+		left: 15px;
+		
+	}
+	.keep-btn-right {
+		right: 15px;
+	}
+}
