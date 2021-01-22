@@ -4,6 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 65px;
+	margin-bottom: 65px;
     &__list {
 		width: 700px;
         display: flex;
@@ -26,20 +27,32 @@
 }
 
 
-@media only screen and (min-width: 1950px) and (max-width: 2560px){
-}
-
 @media only screen and (max-width: 1440px) {
-}
-
-@media only screen and (max-width: 1024px) {
+	.portfolio-nav {
+		margin-bottom: 40px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.portfolio-nav__list {
+		width: 600px;
+	}
+	.portfolio-nav__list li {
+			font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 425px) {
-}
 
-@media only screen and (max-width: 320px) {
+	.portfolio-nav__list li {
+			font-size: 12px;
+			margin-top: 10px;
+	}
+	.portfolio-nav__list {
+		width: 300px;
+		flex-direction: column;
+	}
+	.portfolio-nav {
+		margin: 25px 0;
+	}
 }

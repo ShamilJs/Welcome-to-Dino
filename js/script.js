@@ -203,6 +203,26 @@ const carouselGreat = new sliderCarousel({ main: '.great',
 									 });
 carouselGreat.init();
 
+const carouselPortfolio = new sliderCarousel({ main: '.portfolio',
+                                        wrap: '.portfolio__block',
+                                        prev: '.portfolio-btn-left',
+                                        next: '.portfolio-btn-right',
+										slidesToShow: 3,
+										infinity: true,
+										responsive: [
+										{
+											breakpoint: 768,
+											slidesToShow: 3
+                                        },
+                                        {
+											breakpoint: 425,
+											slidesToShow: 3
+										},
+										
+									]
+									 });
+carouselPortfolio.init();
+
 const sliderContact = () => {
 	const prev = document.querySelector('.keep-btn-left');
 	const next = document.querySelector('.keep-btn-right');

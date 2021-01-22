@@ -1,3 +1,6 @@
+.portfolio-btn-left, .portfolio-btn-right {
+	display: none;
+}
 .item__text{
 	cursor: pointer;
     position: absolute;
@@ -34,7 +37,7 @@
     letter-spacing: 0.7px;
 }
 .portfolio {
-    margin-top: 50px;
+    margin-top: 50px !important;
     &__block {
         display: flex;
         flex-wrap: wrap;
@@ -61,19 +64,135 @@
 
 
 @media only screen and (min-width: 1950px) and (max-width: 2560px){
+    .portfolio__block {
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 1440px) {
+	.portfolio {
+		margin-top: 30px !important;
+	}
+	.portfolio__block {
+        justify-content: center;
+	}
+	.portfolio__block-item {
+		flex: 0 1 350px;
+	}
+	.item__text-block {
+		padding: 220px 0 0 50px;
+	}
+	.item__text-line {
+		width: 35px;
+		height: 3px;
+		margin-bottom: 20px;
+	}
+	.item__text-title {
+		font-size: 18px;
+		letter-spacing: 1.2px;
+		margin-bottom: 15px;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
+	.portfolio {
+		margin-top: 30px !important;
+	}
+	.portfolio__block-item {
+		flex: 0 1 250px;
+	}
+	.item__text-block {
+		padding: 160px 0 0 30px;
+	}
+	.item__text-line {
+		width: 30px;
+		height: 2px;
+		margin-bottom: 15px;
+	}
+	.item__text-title {
+		font-size: 14px;
+		letter-spacing: 1.2px;
+		margin-bottom: 10px;
+	}
+	.item__text-subtitle {
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.portfolio__block-item {
+		flex: 0 0 33.3%;	
+	}
+	.portfolio__block {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	.portfolio {
+		position: relative;
+		height: 320px;
+		background-color: #f4f5f9;
+	}
+	.portfolio-btn-left, .portfolio-btn-right {
+		top: 270px;
+		display: flex;
+	}
+	.portfolio-btn-left {
+		left: 250px;
+	}
+	.portfolio-btn-right{
+		right: 250px;
+	}
+
 }
 
 @media only screen and (max-width: 425px) {
+	.portfolio-btn-left {
+		left: 150px;
+	}
+	.portfolio-btn-right{
+		right: 150px;
+	}
+	.portfolio-btn-left, .portfolio-btn-right {
+		top: 150px;
+	}
+	.portfolio {
+		height: 200px;
+	}
+	.item__text-block {
+		padding: 85px 0 0 10px;
+	}
+	.item__text-line {
+		width: 20px;
+		height: 2px;
+		margin-bottom: 10px;
+	}
+	.item__text-title {
+		font-size: 10px;
+		letter-spacing: 1.2px;
+		margin-bottom: 5px;
+	}
+	.item__text-subtitle {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.item__text-block {
+		padding: 70px 0 0 10px;
+	}
+	.portfolio {
+		height: 160px;
+	}
+	.portfolio-btn-left, .portfolio-btn-right {
+		top: 130px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
+	.portfolio-btn-left {
+		left: 100px;
+	}
+	.portfolio-btn-right{
+		right: 100px;
+	}
 }
