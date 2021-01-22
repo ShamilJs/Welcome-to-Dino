@@ -92,12 +92,15 @@
 }
 
 @media only screen and (max-width: 1440px) {
+	.case-study {
+		min-height: 850px;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
 	.case-study {
 		padding: 40px 40px 0 40px;
-		min-height: 939px;
+		min-height: 700px;
 		background-color: #f4f5f9;
 	}
 	.case-study__slider {
@@ -112,10 +115,13 @@
 		min-height: 350px;
 	}
 	.case-study__right {
-		right: 70px;
+		right: 30px;
 		top: 0;
 		width: 500px;
-		height: 650px;
+		height: 500px;
+	}
+	.case-study__right img{
+		width: 100%;
 	}
 	.study-left__img{
 		width: 88px;
@@ -177,6 +183,11 @@
 		width: 543px;
 		min-height: 420px;
 	}
+	.case-study {
+		padding: 20px 40px 0 40px;
+		min-height: 680px;
+		background-color: #f4f5f9;
+	}
 }
 
 @media only screen and (max-width: 425px) {
@@ -211,6 +222,11 @@
 		width: 400px;
 		min-height: 300px;
 	}
+	.case-study {
+		padding: 0px 40px 0 40px;
+		min-height: 500px;
+		background-color: #f4f5f9;
+	}
 }
 @media only screen and (max-width: 375px) {
 	.case-study__slider {
@@ -229,8 +245,8 @@
 		min-height: 300px;
 	}
 	.case-study {
-		padding: 20px 40px 20px 40px;
-		min-height: 939px;
+		padding: 0px 40px 0 40px;
+		min-height: 480px;
 		background-color: #f4f5f9;
 	}
 }
@@ -251,8 +267,8 @@
 		min-height: 300px;
 	}
 	.case-study {
-		padding: 0px 40px 0px 40px;
-		min-height: 939px;
+		padding: 0px 40px 0 40px;
+		min-height: 480px;
 		background-color: #f4f5f9;
 	}
 }

@@ -35,6 +35,11 @@ html {
 	box-shadow: 0 0 5px rgba(255, 255, 255, .5);
 }
 
+
+div:hover, img:hover {
+	transition-duration: 500ms;
+}
+
 .dn {
 	display: none;
 }
@@ -42,16 +47,16 @@ html {
 @import '_header'; //готов
 @import '_whoWeAre'; //готов
 @import '_ourHistory';  //готов
-@import '_ourServices';  //нет адаптива
+@import '_ourServices';  //готов
 @import '_mainTitle';  //готов
 @import '_portfolioNav';  //готов
 @import '_portfolio';  //готов
 @import '_caseStudy';  //готов
 @import '_statistic';  //готов
-@import '_pricing';  //нет адаптива
-@import '_ourTeam';  //нет адаптива
+@import '_pricing';  //готов
+@import '_ourTeam';  //готов
 @import '_great';  //готов
-// нет одного блока
+@import '_blog';
 @import '_keepInTouch';  //готов
 @import '_pre-footer';  //готов
 @import '_footer';  //готов
@@ -80,10 +85,63 @@ html {
 
 @media only screen and (max-width: 320px) {
 	.btn{
-		width: 100px;
+		width: 120px;
 		height: 25px;
 		font-size: 10px;
 		font-weight: 400;
 		border-radius: 2px;
+	}
+}
+
+div:hover, img:hover, button:hover {
+	transition-duration: 300ms !important;
+}
+
+.main-btn-right {
+	width: 53px;
+	height: 53px;
+	border-radius: 50px !important;
+	position: fixed !important;
+	right: 40px !important;
+	top: 93% ;
+	transform: rotate(-90deg);
+	display: none;
+	z-index: 10;
+}
+.main-btn-right a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.main-btn-right {
+		width: 43px;
+		height: 43px;
+		right: 40px !important;
+		top: 93% ;
+	}
+	
+}
+@media only screen and (max-width: 768px) {
+	.main-btn-right {
+		width: 43px;
+		height: 43px;
+		right: 20px !important;
+		top: 93% ;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.main-btn-right {
+		width: 33px;
+		height: 33px;
+		right: 10px !important;
+		top: 94% ;
+		
 	}
 }

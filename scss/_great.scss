@@ -44,7 +44,14 @@
 }
 
 
-
+@media only screen and (min-width: 1950px) and (max-width: 2560px) {
+	.great {
+		background-color: #f4f5f9;
+		padding-top: 65px;
+		padding-bottom: 0px;
+		border-bottom: 1px solid #e6e7eb;
+	}
+}
 
 @media only screen and (max-width: 1024px) {
 	.great {

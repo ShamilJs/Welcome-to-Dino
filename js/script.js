@@ -223,6 +223,26 @@ const carouselPortfolio = new sliderCarousel({ main: '.portfolio',
 									 });
 carouselPortfolio.init();
 
+const carouselBlog = new sliderCarousel({ main: '.blog',
+                                        wrap: '.blog__container',
+                                        prev: '.blog-btn-left',
+                                        next: '.blog-btn-right',
+										slidesToShow: 1.53,
+										infinity: true,
+										responsive: [
+										{
+											breakpoint: 768,
+											slidesToShow: 1.53
+                                        },
+                                        {
+											breakpoint: 425,
+											slidesToShow: 0.7
+										},
+										
+									]
+									 });
+carouselBlog.init();
+
 const sliderContact = () => {
 	const prev = document.querySelector('.keep-btn-left');
 	const next = document.querySelector('.keep-btn-right');
@@ -242,4 +262,56 @@ const sliderContact = () => {
 	});
 
 }
-sliderContact()
+sliderContact();
+
+
+const sliderPricing = () => {
+    const prev = document.querySelector('.pricing-btn-left');
+    const next = document.querySelector('.pricing-btn-right');
+    const slides = document.querySelectorAll('.pricing__item');
+    let count = 0;
+    
+    const displayItem = () => {        
+        slides.forEach((item, i) => {
+            if (i === count) item.style.display = 'block';
+            else item.style.display = 'none';
+        })
+    }
+
+    next.addEventListener('click', () => {
+        count ++;
+        if (count === 2) {
+            next.style.display = 'none';
+            prev.style.display = 'flex';
+        }
+        displayItem();
+    })
+    prev.addEventListener('click', () => {
+        count --;
+        if (count === 0) {
+            next.style.display = 'flex';
+            prev.style.display = 'none';
+        }
+        displayItem();
+    })
+};
+
+sliderPricing();
+
+const footerUp = () => {
+    const footerUpBtn = document.querySelector('.main-btn-right');
+    const header = document.querySelector('.header');
+    let	topElem;
+    window.addEventListener('scroll', () => {
+
+       topElem = header.getBoundingClientRect().top;
+
+		if (topElem < -650) {
+            console.log(1);
+			footerUpBtn.style.display = 'flex';
+		} else {
+            footerUpBtn.style.display = 'none';
+        }
+	});
+};
+footerUp();

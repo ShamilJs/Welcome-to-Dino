@@ -1,5 +1,8 @@
+.pricing-btn-left, .pricing-btn-right {
+	display: none;
+}
 .pricing {
-	margin-top: 70px;
+	margin: 70px 0;
     &__block {
 		display: flex;
 		justify-content: space-between;
@@ -105,16 +108,116 @@
 }
 
 @media only screen and (max-width: 1440px) {
+	.pricing {
+		margin: 50px 0;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
+	.pricing-up__title {
+		font-size: 18px;
+		text-align: center;
+	}
+	.pricing-down__list {
+		font-size: 12px;
+	}
+	.pricing-up__number {
+		font-size: 32px;
+	}
+	.pricing-up__price {
+		bottom: -35%;
+		left: 26%;
+		width: 140px;
+		height: 140px;
+	}
+	.pricing__item {
+		width: 300px;
+		min-height: 300px;
+	}
+	.pricing-down {
+		height: 400px;
+		padding: 100px 80px 40px 80px;
+	}
+	.pricing-up {
+		height: 180px;
+		background-color: #999999;
+		padding: 30px 120px 0px 120px;
+		display: flex;
+		justify-content: center;
+	}
+	.pricing {
+		padding: 0 40px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.pricing {
+		position: relative;
+	}
+	.pricing-btn-left, .pricing-btn-right {
+		top: 200px;
+	}
+	.pricing-btn-right {
+		right: 160px;
+		display: flex;
+	}
+	.pricing-btn-left {
+		left: 160px;
+	}
+	.pricing__block {
+		justify-content: center;
+	}
+	.pricing__item:nth-child(2), .pricing__item:nth-child(3) {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 425px) {
+	.pricing-down {
+		height: 320px;
+		padding: 60px 80px 40px 80px;
+	}
+	.pricing-up {
+		height: 150px;
+	}
+	.pricing-up__price {
+		bottom: -40%;
+		left: 29%;
+		width: 120px;
+		height: 120px;
+	}
+	.pricing-btn-right {
+		right: 40px;
+		display: flex;
+	}
+	.pricing-btn-left {
+		left: 40px;
+	}
+	.pricing {
+		margin: 20px 0;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.pricing-btn-right {
+		right: 20px;
+		display: flex;
+	}
+	.pricing-btn-left {
+		left: 20px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
+	.pricing-btn-right {
+		right: 10px;
+		display: flex;
+	}
+	.pricing-btn-left {
+		left: 10px;
+	}
+	.pricing__item {
+		width: 270px;
+		min-height: 300px;
+	}
 }

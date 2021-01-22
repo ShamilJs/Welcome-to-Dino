@@ -147,6 +147,34 @@
 
 
 @media only screen and (min-width: 1950px) and (max-width: 2560px){
+	.team1{
+		bottom: 27px;
+		left: 0;
+	}
+	.team2{
+		bottom: 55px;
+		left: 295px;
+	}
+
+	.team4{
+		bottom: 20px;
+	}
+	.team5{
+		bottom: 25px;
+		right: 20px;
+	}
+	
+	.team1:hover{
+		bottom: 10px;
+	}
+
+	.team3:hover{
+		bottom: 35px;
+	}
+	.team5:hover{
+		bottom: 5px;
+		right: 0px;
+	}
 }
 
 @media only screen and (max-width: 1440px) {
@@ -168,26 +196,195 @@
 	}
 	
 	.team1:hover{
-		bottom: -60px;
+		bottom: -70px;
+	}
+	.team2:hover{
+		bottom: 25px;
+		left: 295px;
 	}
 
 	.team3:hover{
 		bottom: 35px;
 	}
 	.team5:hover{
-		bottom: 120px;
-		right: 20px;
+		bottom: 130px;
+		right: 0px;
 	}
 }
 
 @media only screen and (max-width: 1024px) {
+	.our-team {
+		// margin-top: 80px;
+		// min-height: 600px;
+		// padding: 100px 0 0 0;
+	}
+	.team1{
+		bottom: -45px;
+		left: 110px;
+	}
+	.team2{
+		bottom: 40px;
+		left: 295px;
+	}
+
+	.team4{
+		bottom: 20px;
+		right: 270px;
+	}
+	.team5{
+		bottom: 140px;
+		right: 110px;
+	}
+	
+	.team1:hover{
+		bottom: -50px;
+	}
+	.team2:hover{
+		bottom: 25px;
+		left: 295px;
+	}
+
+	.team3:hover{
+		bottom: 35px;
+	}
+	.team4:hover{
+		bottom: 10px;
+		right: 250px;
+	}
+	.team5:hover{
+		bottom: 120px;
+		right: 80px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	.our-team {
+		margin-top: 80px;
+		min-height: 500px;
+		padding: 100px 0 0 0;
+	}
+	.team1{
+		bottom: 60px;
+		left: 50px;
+	}
+	.team2{
+		bottom: 125px;
+		left: 200px;
+	}
+	.team3 {
+		bottom: 135px;
+		left: 48%;
+	}
+
+	.team4{
+		bottom: 120px;
+		right: 200px;
+	}
+	.team5{
+		bottom: 220px;
+		right: 60px;
+	}
+	
+	.team1:hover{
+		bottom: 60px;
+		left: 50px;
+	}
+	.team2:hover{
+		bottom: 105px;
+		left: 200px;;
+	}
+
+	.team3:hover{
+		bottom: 115px;
+		left: 46%;
+	}
+	.team4:hover{
+		bottom: 110px;
+		right: 180px;
+	}
+	.team5:hover{
+		bottom: 220px;
+		right: 30px;
+	}
+	.team__title {
+		margin: 10px 0 0 0;
+		font-size: 16px;
+	}
+	.team__text {
+		margin: 5px 0 0 0;
+		font-size: 12px;
+	}
+	.team__hover::before {
+		height: 30px;
+		background-color: #ffffff;
+		opacity: 0.75;
+	}
 }
 
 @media only screen and (max-width: 425px) {
+	.our-team {
+		margin-top: 40px;
+		min-height: 470px;
+		padding: 40px 0 0 0;
+		
+	}
+	.team1, .team2, .team3, .team4, .team5 {
+		display: flex;
+		width: 300px;
+		left: 115px;
+		pointer-events: none;
+	}
+	.team1{
+		top: 100px;
+	}
+	.team2{
+		top: 160px;
+	}
+	.team3 {
+		top: 220px;
+	}
+
+	.team4{
+		top: 280px;
+	}
+	.team5{
+		top: 340px;
+	}
+	.team__hover {
+		display: block;
+		padding-left: 80px;
+		width: auto;
+	}
+	.team__text {
+		margin: 0 0 0 0;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.team1, .team2, .team3, .team4, .team5 {
+		display: flex;
+		width: 250px;
+		left: 100px;
+		pointer-events: none;
+	}
+	.team__hover {
+		display: block;
+		padding-left: 60px;
+		width: auto;
+	}
 }
 
 @media only screen and (max-width: 320px) {
+	.team1, .team2, .team3, .team4, .team5 {
+		display: flex;
+		width: 240px;
+		left: 70px;
+		pointer-events: none;
+	}
+	.team__hover {
+		display: block;
+		padding-left: 60px;
+		width: auto;
+	}
 }
